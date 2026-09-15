@@ -1,0 +1,38 @@
+//exemplo compra
+select *from cliente
+select * from pedido
+select * from produto
+select * from mercadoria
+
+alter table cliente add bairro varchar(30);
+
+alter table pedido add teste integer;
+alter table pedido drop teste;
+
+alter table cliente rename column nome to nome_cliente;
+
+alter table cliente alter nome_cliente type varchar(100);
+
+alter table produto rename to mercadorias;
+alter table mercadorias rename to mercadoria;
+
+//exemplo banco:
+select * from cliente
+select * from conta
+select * from contacorrente
+select * from devedor
+select * from agencia
+
+alter table cliente add telefone varchar(15);
+
+alter table conta add tipo_conta varchar(10);
+
+alter table cliente drop cidade;
+
+alter table devedor drop cod_cliente_devedor;
+
+alter table agencia rename column nome_agencia to nome_age;
+
+alter table conta alter saldo_conta type integer;
+
+alter table conta rename to contacorrente;
